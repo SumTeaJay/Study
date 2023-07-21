@@ -1,0 +1,13 @@
+﻿l_russian:
+ SKL_fascism_party_start:0 "КП"
+ SKL_fascism_party_start_long:0 "Коалиция правых"
+ SKL_communism_party_start:0 "КЛ"
+ SKL_communism_party_start_long:0 "Коалиция левых"
+ SKL_democratic_party_start:0 "Эсеры"
+ SKL_democratic_party_start_long:0 "Партия социалистов - революционеров"
+ SKL_neutrality_party_start:0 "ВСС"
+ SKL_neutrality_party_start_long:0 "Вооруженные сила Сахалина"
+ DAY_neutrality_party:0 "Сенат"
+ DAY_neutrality_party_long:0 "Всенародный Общеклассовый Сенат Далянь"
+ 
+ 

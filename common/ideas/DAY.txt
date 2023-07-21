@@ -1,0 +1,174 @@
+ideas = {
+
+	# экономика свободного города
+	economy = {
+		law = yes
+		use_list_view = yes
+
+		free_city_economy = {
+
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.4
+				research_speed_factor = 0.1
+				production_speed_industrial_complex_factor = 0.3
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = 0.2
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = -0.5
+				
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			cancel_if_invalid = yes
+		}}
+		
+	country = {
+		
+		DAY_save_this_30g = {
+			allowed = {
+				original_tag = DAY
+			}
+
+			allowed_civil_war = {
+				tag = DAY
+			}
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1
+			political_power_gain = 0.15
+			army_core_attack_factor = 0.3
+			army_core_defence_factor = 0.3
+			army_attack_factor = -0.1
+			}
+			}
+			
+		#Стагнация
+
+		DAY_stagnations = {
+			allowed = {
+				original_tag = DAY
+			}
+
+			allowed_civil_war = {
+				tag = DAY
+			}
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1
+			political_power_gain = -0.1
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = -0.3
+			}
+			}
+		DAY_not_stagnation = {
+			allowed = {
+				original_tag = DAY
+			}
+
+			allowed_civil_war = {
+				tag = DAY
+			}
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.1
+			political_power_gain = -0.15
+			consumer_goods_factor = -0.02
+			production_speed_buildings_factor = 0.2
+			}
+			}
+		
+		# Образование
+		
+		DAY_night_obraz_1 = {
+			allowed = {
+				original_tag = DAY
+			}
+
+			allowed_civil_war = {
+				tag = DAY
+			}
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = -0.3
+			}
+			}
+		DAY_night_obraz_2 = {
+			allowed = {
+				original_tag = DAY
+			}
+
+			allowed_civil_war = {
+				tag = DAY
+			}
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = -0.2
+			}
+			}
+		DAY_night_obraz_3 = {
+			allowed = {
+				original_tag = DAY
+			}
+
+			allowed_civil_war = {
+				tag = DAY
+			}
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = -0.1
+			}
+			}
+		
+		# Беженцы bezj
+			DAY_bezjentsi_1_lvl = {
+			allowed = {
+				original_tag = DAY
+			}
+
+			allowed_civil_war = {
+				tag = DAY
+			}
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.1
+			political_power_gain = -0.15
+			consumer_goods_factor = -0.02
+			production_speed_buildings_factor = 0.2
+			}
+			}
+			
+		DAY_trage_SKL_1lvl = {
+			allowed = {
+				original_tag = DAY
+			}
+
+			allowed_civil_war = {
+				tag = DAY
+			}
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.05
+			consumer_goods_factor = -0.01
+			}
+		}
+	
+}}
+

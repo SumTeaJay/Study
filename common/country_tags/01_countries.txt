@@ -1,0 +1,4 @@
+KOS= "countries/Kosovo.txt"
+SKL= "countries/Sakhalin.txt"
+DAY= "countries/Daylan.txt"
+TRR= "countries/Transamur.txt"

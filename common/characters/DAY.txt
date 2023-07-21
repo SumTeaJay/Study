@@ -1,0 +1,166 @@
+characters={
+	DAY_Senat ={
+		name= "DAY_Senats"
+		portraits={
+			civilian={
+				large=GFX_portrait_DAY_Senat
+			}
+		}
+		country_leader={
+			ideology = centrism
+			traits={ DAY_neef_bur }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology = conservatism
+			traits={ DAY_neef_bur }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology = marxism
+			traits={ DAY_neef_bur }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	DAY_Kim_Huan ={
+		name= "DAY_Kim_Huans"
+		portraits={
+			army={
+			large=GFX_portrait_DAY_Kim_Huan
+			small=GFX_idea_DAY_Kim_Huan
+			}
+		advisor ={ small=GFX_portrait_DAY_Kim_Huan_small }
+		}
+		advisor ={
+			slot = high_command
+			ledger = army
+			idea_token = DAY_Kim_Huans
+			allowed = {
+				original_tag = DAY
+			}
+			traits = {
+			DAY_pylgosari
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1500
+			}
+		}
+		corps_commander={
+			traits={ army_chief_offensive_1 }
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=4
+			legacy_id=3
+		}
+	}
+	DAY_Kanji_Ishiwara={
+		name= "Kanji_Ishiwara"
+		portraits={
+		civilian={
+				large=GFX_portrait_DAY_Kanji_Ishiwara
+				small=GFX_idea_DAY_Kanji_Ishiwara
+			}
+		}
+	country_leader={
+			ideology = fascism_ideology
+			traits={ DAY_See }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	advisor = {
+			slot = political_advisor
+			idea_token = Kanji_Ishiwara
+			allowed = {
+				original_tag = DAY
+			}
+			traits = {
+			DAY_See
+			}
+			cost = 10
+			ai_will_do = {
+				factor = 150
+			}
+		}
+
+	}
+	DAY_Li_Namgun={
+		name= "Li_Namgun"
+		portraits={
+		civilian={
+				large=GFX_portrait_DAY_Li_Namgun
+				small=GFX_idea_DAY_Li_Namgun
+			}
+		}
+	country_leader={
+			ideology = oligarchism
+			traits={ DAY_senator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	advisor = {
+			slot = political_advisor
+			idea_token = Li_Namgun
+			allowed = {
+				original_tag = DAY
+			}
+			traits = {
+			DAY_senator
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 150
+			}
+		}
+
+	}
+	DAY_Shiro_Yamado={
+		name= "Shiro_Yamado"
+		portraits={
+			civilian={
+				small=GFX_idea_DAY_Shiro_Yamado
+			}		
+		}
+	advisor = {
+			slot = political_advisor
+			idea_token = Shiro_Yamado
+			allowed = {
+				original_tag = DAY
+			}
+			traits = {
+			DAY_Factoru
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 150
+			}
+		}
+	}
+	DAY_Petr_Petrov={
+		name= "Petr_Petrov"
+		portraits={
+			civilian={
+				small=GFX_idea_DAY_Petr_Petrov
+			}
+		}
+	advisor = {
+			slot = political_advisor
+			idea_token = Petr_Petrov
+			allowed = {
+				original_tag = DAY
+			}
+			traits = {
+			DAY_Petr
+			}
+			cost = 250
+			ai_will_do = {
+				factor = 150
+			}
+		}
+	}
+}

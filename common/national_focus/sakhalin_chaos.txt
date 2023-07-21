@@ -1,0 +1,134 @@
+focus_tree = {
+	id = sakhalin_chaos
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SKL
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+	focus = {
+		id = SKL_last_days_of_the_regime
+		icon = GFX_goal_SKL_last_days_of_regim
+		x = 6
+		y = 0
+		cost = 1.8
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_popularity = {
+    			ideology = democratic
+    			popularity = -0.05
+			}
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.02
+			}
+			add_popularity = {
+    			ideology = communism
+    			popularity = 0.02
+			}
+		}
+	}
+
+	focus = {
+		id = SKL_Unrest_in_the_streets
+		icon = GFX_goal_SKL_Unrest_in_the_streets
+		prerequisite = { focus = SKL_last_days_of_the_regime }
+		x = 6
+		y = 1
+		cost = 2.1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.15
+			custom_effect_tooltip = SKL_yzhasy_na_ulitsah	
+			hidden_effect  = {
+				537 = { 
+					damage_building = {
+    					type = infrastructure
+    					damage = 0.5
+					}
+				}
+				655 = { 
+					damage_building = {
+    					type = infrastructure
+    					damage = 0.5
+					}
+				}
+				915 = { 
+					damage_building = {
+    					type = infrastructure
+    					damage = 0.5
+					}
+				}
+				916 = { 
+					damage_building = {
+    					type = infrastructure
+    					damage = 0.5
+					}
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Autonomy_is_a_sign_of_strength
+		icon = GFX_focus_SKL_premier_viktorev
+		prerequisite = { focus = SKL_Unrest_in_the_streets }
+        mutually_exclusive = { focus = SKL_Prayer_to_the_Creator }
+		x = 4
+		y = 3
+		cost = 1.8
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = SKL_Prayer_to_the_Creator
+		icon = GFX_focus_SKL_prayer_to_the_Creator
+		prerequisite = { focus = SKL_Unrest_in_the_streets }
+        mutually_exclusive = { focus = SKL_Autonomy_is_a_sign_of_strength }
+		x = 8
+		y = 3
+		cost = 1.8
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -20
+		}
+	}
+
+	focus = {
+		id = SKL_Who_can_I_help
+		icon = GFX_goal_SKL_Who_can_I_help
+		prerequisite = { focus = SKL_Prayer_to_the_Creator focus = SKL_Autonomy_is_a_sign_of_strength}
+		prerequisite = { focus = SKL_Unrest_in_the_streets }
+		x = 6
+		y = 4
+		cost = 2.3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 20
+			country_event = {
+				id = SKL.1
+				days = 1
+			}
+		}
+	}
+
+
+}

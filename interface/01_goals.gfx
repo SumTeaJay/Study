@@ -1,0 +1,59 @@
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_goal_Togr_SOV"
+	texturefile = "gfx/interface/goals/focus_Togr_SOV.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_Vizit_Gom"
+	texturefile = "gfx/interface/goals/focus_Vizit_Gom.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_Vopros_sahalina"
+	texturefile = "gfx/interface/goals/focus_Vopros_sahalina.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_Imperror_of_china_tsin"
+	texturefile = "gfx/interface/goals/focus_Vizit_imperor_chin.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_Problems_sityation"
+	texturefile = "gfx/interface/goals/focus_Problems_sityation.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_What_economy"
+	texturefile = "gfx/interface/goals/focus_What_economy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_traktor"
+	texturefile = "gfx/interface/goals/focus_traktor.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KOR_Not_free"
+	texturefile = "gfx/interface/goals/focus_KOR_Not_free.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_SKL_last_days_of_regim"
+	texturefile = "gfx/interface/goals/focus_SKL_last_days_of_regim.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_SKL_Unrest_in_the_streets"
+	texturefile = "gfx/interface/goals/focus_SKL_Unrest_in_the_streets.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_SKL_Who_can_I_help"
+	texturefile = "gfx/interface/goals/focus_SKL_Who_can_I_help.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_SKL_premier_viktorev"
+	texturefile = "gfx/interface/goals/focus_SKL_premier_viktorev.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_SKL_new_project_industrialization"
+	texturefile = "gfx/interface/goals/focus_SKL_new_project_industrialization.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_SKL_prayer_to_the_Creator"
+	texturefile = "gfx/interface/goals/focus_SKL_prayer_to_the_Creator.dds"			
+	}
+}

@@ -1,0 +1,49 @@
+SKL = {
+	male = {
+		names = { Danila Daniil Alexey Kirill Velimir Konstantin }
+	}
+	female = {
+		names = { Anna Nastya Elena Arina Viktoria Ekaterina }
+	}
+	surnames = {
+		surnames = { Danilov Alexeev Kirillov Viktorev Letov }
+	}
+}
+DAY = {
+	male = {
+		names = { Daniil Alexey Kirill Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi 
+			Hee-Seok Jae-Hoon Shin-Woo Sang Gun Chul Hyuk Yoon-Gi
+			Wang Li Zhang }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng Anna Miya Kira Tao Mio Kagya}
+	}
+	surnames = {
+		surnames = { Jiang Wei Ting Shen Fang Jin Qiu Takashi Mamashi Chen Hao Petrov Levitskii Nabuhiro Ivadzuma Sinomia }
+	}
+}
+TRR = {
+	male = {
+		names = { Daniil Alexey Kirill Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi 
+			Hee-Seok Jae-Hoon Shin-Woo Sang Gun Chul Hyuk Yoon-Gi
+			Wang Li Zhang }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng Anna Miya Kira Tao Mio Kagya}
+	}
+	surnames = {
+		surnames = { Jiang Wei Ting Shen Fang Jin Qiu Takashi Mamashi Chen Hao Petrov Levitskii Nabuhiro Ivadzuma Sinomia }
+	}
+}

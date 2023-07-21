@@ -1,0 +1,411 @@
+characters = {
+	SKL_viktor_chernov = {
+		name = SKL_viktor_chernov
+		portraits={
+			civilian={
+				large=GFX_SKL_viktor_chernov
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits={ SKL_theorist_who_betrayed_his_ideas }
+            desc = SKL_viktor_chernov_desc
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+
+	SKL_grigoriy_semenov = {
+		name = SKL_grigoriy_semenov
+        corps_commander = {
+            skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+            legacy_id = -1
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = petr_vrangel
+            ledger = army
+            allowed = { original_tag = SKL }
+            traits = { SKL_mad_cossack }
+        }
+	}
+
+	SKL_petr_vrangel = {
+		name = SKL_petr_vrangel
+        field_marshal  = {
+            skill = 6
+            attack_skill = 10
+            defense_skill = 2
+            planning_skill = 6
+            logistics_skill = 4
+            legacy_id = -1
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = petr_vrangel
+            ledger = army
+            allowed = { original_tag = SKL }
+            traits = { SKL_founder_of_the_ROVS }
+        }
+	}
+
+	SKL_andrey_shkuro = {
+		name = SKL_andrey_shkuro
+        corps_commander = {
+            skill = 2
+            attack_skill = 3
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 7
+            legacy_id = -1
+        }
+	}
+
+	SKL_petr_krasnov = {
+		name = SKL_petr_krasnov
+        field_marshal  = {
+            skill = 7
+            attack_skill = 7
+            defense_skill = 8
+            planning_skill = 6
+            logistics_skill = 6
+            legacy_id = -1
+        }
+        advisor = {
+            slot = high_command
+            idea_token = petr_vrangel
+            ledger = army
+            allowed = { original_tag = SKL }
+            traits = { SKL_far_eastern_cossack }
+        }
+	}
+
+	SKL_anatoly_pepelyev = {
+		name = SKL_anatoly_pepelyev
+        corps_commander = {
+            skill = 1
+            attack_skill = 6
+            defense_skill = 4
+            planning_skill = 3
+            logistics_skill = 1
+            legacy_id = -1
+        }
+	}
+
+	SKL_nikolay_skoblin = {
+		name = SKL_nikolay_skoblin
+        corps_commander = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 8
+            planning_skill = 10
+            logistics_skill = 4
+            legacy_id = -1
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = petr_vrangel
+            ledger = army
+            allowed = { original_tag = SKL }
+            traits = { SKL_brave_man }
+        }
+	}
+
+	SKL_michail_berens = {
+		name = SKL_michail_berens
+        corps_commander = {
+            skill = 4
+            attack_skill = 7
+            defense_skill = 5
+            planning_skill = 8
+            logistics_skill = 5
+            legacy_id = -1
+        }
+	}
+
+	SKL_anton_denikin = {
+		name = SKL_anton_denikin
+        advisor = {
+            slot = high_command
+            idea_token = anton_denikin
+            ledger = army
+            allowed = { original_tag = SKL }
+            traits = { SKL_an_out_of_the_box_thinking_general }
+        }
+	}
+
+	SKL_alexandr_dolgorukov = {
+		name = SKL_anton_denikin
+        advisor = {
+            slot = high_command
+            idea_token = anton_denikin
+            ledger = army
+            allowed = { original_tag = SKL }
+            traits = { SKL_skillful_coach }
+        }
+	}
+
+	SKL_alexandr_kolchak = {
+		name = SKL_alexandr_kolchak
+		navy_leader = {
+            skill = 6
+            attack_skill = 7
+            defense_skill = 4
+            maneuvering_skill = 6
+            coordination_skill = 7
+ 	    	legacy_id = -1
+		}
+        advisor = {
+            slot = navy_chief
+            idea_token = alexandr_kolchak
+            ledger = naval
+            allowed = { original_tag = SKL }
+            traits = { SKL_great_admiral }
+        }
+	}
+
+	SKL_michail_kedrov = {
+		name = SKL_michail_kedrov
+		navy_leader = {
+	    	skill = 2
+	    	attack_skill = 3
+	    	defense_skill = 6
+	    	maneuvering_skill = 4
+	    	coordination_skill = 5
+ 	    	legacy_id = -1
+		}
+        advisor = {
+            slot = navy_chief
+            idea_token = michail_kedrov
+            ledger = naval
+            allowed = { original_tag = SKL }
+            traits = { SKL_artillery_ship_theorist }
+        }
+	}
+
+	SKL_georgy_stark = {
+		name = SKL_georgy_stark
+		navy_leader = {
+	    	skill = 5
+	    	attack_skill = 5
+	    	defense_skill = 6
+	    	maneuvering_skill = 4
+	    	coordination_skill = 5
+ 	    	legacy_id = -1
+		}
+	}
+
+	SKL_ivan_kononov = {
+		name = SKL_ivan_kononov
+		navy_leader = {
+	    	skill = 1
+ 	    	attack_skill = 5
+ 	    	defense_skill = 6
+ 	    	maneuvering_skill = 3
+ 	    	coordination_skill = 6
+ 	    	legacy_id = -1
+		}
+	}
+
+	SKL_alexei_mikhailovich_spiridonov = {
+		name = SKL_alexei_mikhailovich_spiridonov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = alexei_mikhailovich_spiridonov
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_supporter_of_soviet_power }
+		}
+	}
+
+	SKL_grigory_andreevich_gershuni = {
+		name = SKL_grigory_andreevich_gershuni
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = grigory_andreevich_gershuni
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_radical_SR }
+		}
+	}
+
+	SKL_maria_alexandrovna_spiridonova = {
+		name = SKL_maria_alexandrovna_spiridonova
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = maria_alexandrovna_spiridonova
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_fervent_revolutionary }
+		}
+	}
+
+	SKL_boris_davidovich_kamkov = {
+		name = SKL_boris_davidovich_kamkov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = boris_davidovich_kamkov
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_founder_of_the_left_wing }
+		}
+	}
+
+	SKL_nikolai_dmitrievich_kondratyev = {
+		name = SKL_nikolai_dmitrievich_kondratyev
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = nikolai_dmitrievich_kondratyev
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_underrated_economist }
+		}
+	}
+
+	SKL_maslov_sergey_semenovich = {
+		name = SKL_maslov_sergey_semenovich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = maslov_sergey_semenovich
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_old_SR }
+		}
+	}
+
+	SKL_ilya_isidorovich_fondominsky = {
+		name = SKL_ilya_isidorovich_fondominsky
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = ilya_isidorovich_fondominsky
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_religious_democrat }
+		}
+	}
+
+	SKL_vladimir_dmitrievich_kosmin = {
+		name = SKL_vladimir_dmitrievich_kosmin
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = vladimir_dmitrievich_kosmin
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_nazi_boss }
+		}
+	}
+
+	SKL_boris_viktorovich_savinkov = {
+		name = SKL_boris_viktorovich_savinkov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = boris_viktorovich_savinkov
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_ambiguous_SR }
+		}
+	}
+
+	SKL_abram_rafailovich_gotz = {
+		name = SKL_abram_rafailovich_gotz
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = abram_rafailovich_gotz
+			ledger = civilian
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_determined_militant }
+		}
+	}
+
+	SKL_kunle_donat_josephovich = {
+		name = SKL_kunle_donat_josephovich
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_patriarch_meletius"
+			}
+		}
+		advisor = {
+            slot = air_chief
+            idea_token = kunle_donat_josephovich
+			ledger = air
+			allowed = {
+				original_tag = SKL
+			}
+            traits = { SKL_fascist_pilot }
+		}		
+	}
+}

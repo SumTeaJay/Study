@@ -1,0 +1,32 @@
+state= {
+	id=537
+	name="STATE_537"
+	manpower = 51329
+	resources={
+		oil=3 # was: 4
+	}
+	
+	state_category = rural
+
+	history= {
+		owner = SKL
+		add_core_of = SKL
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+		}
+		victory_points = {
+			1820 1
+		}
+
+	}
+	provinces=
+	{
+		1322 1820 	
+	}
+
+	local_supplies=0.0 
+}

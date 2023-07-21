@@ -1,0 +1,44 @@
+spriteTypes = {
+
+#Далянь
+	SpriteType = {
+	name = "GFX_idea_free_city_economy"
+	texturefile = "gfx/interface/ideas/idea_free_city_economy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_DAY_stagnations"
+	texturefile = "gfx/interface/ideas/DAY/idea_DAY_stagnation.dds"
+	}
+	SpriteType = {
+	name = "GFX_idea_DAY_not_stagnation"
+	texturefile = "gfx/interface/ideas/DAY/idea_DAY_not_stagnation.dds"
+	}
+	SpriteType = {
+	name = "GFX_idea_DAY_trage_SKL_1lvl"
+	texturefile = "gfx/interface/ideas/DAY/idea_Trage_DAY.dds"
+	}
+	SpriteType = {
+	name = "GFX_idea_SKL_trage_DAY_1lvl"
+	texturefile = "gfx/interface/ideas/SKL/idea_Trage_SKL.dds"
+	}
+	SpriteType = {
+	name = "GFX_trait_pulgasaru"
+	texturefile = "gfx/interface/traits/personal/trait_pulgasaru.dds"
+	}
+	SpriteType = {
+	name = "GFX_idea_DAY_night_obraz_1"
+	texturefile = "gfx/interface/ideas/DAY/idea_DAY_night_obraz_1.dds"
+	}
+	SpriteType = {
+	name = "GFX_idea_DAY_night_obraz_2"
+	texturefile = "gfx/interface/ideas/DAY/idea_DAY_night_obraz_2.dds"
+	}
+	SpriteType = {
+	name = "GFX_idea_DAY_night_obraz_3"
+	texturefile = "gfx/interface/ideas/DAY/idea_DAY_night_obraz_3.dds"
+	}
+	SpriteType = {
+	name = "GFX_idea_DAY_save_this_30g"
+	texturefile = "gfx/interface/ideas/DAY/idea_DAY_save_this_30g.dds"
+	}
+}

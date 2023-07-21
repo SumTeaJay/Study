@@ -1,0 +1,26 @@
+state=
+{
+	id=910
+	name="STATE_910"
+	manpower = 1331000
+	
+	state_category = large_town
+	history=
+	{
+		owner = JAP
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			7186 5 
+		}
+
+	}
+	provinces={
+		4096 7186 7214 9955 11959
+		}
+
+	local_supplies=10.0 
+}

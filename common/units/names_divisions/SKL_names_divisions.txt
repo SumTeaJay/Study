@@ -1,0 +1,39 @@
+﻿# Infantry
+SKL_INF_01 = {
+	name = "Pervya gruppa"
+
+	for_countries = { SKL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Pervya gruppa"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1 Strelkovaya Divizia" }
+	}
+}
+
+SKL_INF_02 = {
+	name = "Vtorya gruppa"
+
+	for_countries = { SKL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Vtorya gruppa"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1 Militsia" }
+		2 = { "1 Militsia" }
+		3 = { "1 Militsia" }
+	}
+}
+

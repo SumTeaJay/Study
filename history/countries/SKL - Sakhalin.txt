@@ -1,0 +1,99 @@
+#БАЗА
+capital = 537
+set_oob = "SKL_1936"
+set_naval_oob = "SKL_1936_naval"
+set_research_slots = 2
+set_stability = 0.35
+set_war_support = 0.15
+add_ideas = {
+    SKL_white_dominance     #Засилье белых
+    SKL_ROVS_headquarters #Штаб РОВС
+    SKL_the_aftermath_of_the_Tokyo_conference   #Последствия Токийской конференции
+    SKL_chaos   #Хаос
+    SKL_destroyed_economy #Уничтоженная экономика
+}
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_military_police = 1
+	gw_artillery = 1
+	strategic_bomber1 = 1
+	basic_train = 1
+	early_battleship = 1
+}
+set_convoys = 100
+
+#Внутренняя политика
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 39
+	fascism = 39
+	neutrality = 3
+	communism = 19
+}
+set_party_name = {
+    ideology = neutrality
+    long_name =  SKL_neutrality_party_start_long
+    name =  SKL_neutrality_party_start
+}
+set_party_name = {
+    ideology = communism
+    long_name =  SKL_communism_party_start_long
+    name =  SKL_communism_party_start
+}
+set_party_name = {
+    ideology = democratic
+    long_name =  SKL_democratic_party_start_long
+    name =  SKL_democratic_party_start
+}
+set_party_name = {
+    ideology = fascism
+    long_name =  SKL_fascism_party_start_long
+    name =  SKL_fascism_party_start
+}
+
+#Лидеры, советники, генералы, адмиралы и прочие людишки
+recruit_character = SKL_viktor_chernov #Чернов, лидер Сахалина на момент начала игры
+recruit_character = SKL_grigoriy_semenov #Григорий Семенов
+recruit_character = SKL_petr_vrangel #Петр Врангель
+recruit_character = SKL_andrey_shkuro #Андрей Шкуро
+recruit_character = SKL_petr_krasnov #Петр Краснов
+recruit_character = SKL_anatoly_pepelyev #Анатолий Пепеляев
+recruit_character = SKL_nikolay_skoblin #Николай Скоблин
+recruit_character = SKL_michail_berens #Михаил Беренс
+recruit_character = SKL_alexandr_kolchak #Александр Колчак
+recruit_character = SKL_michail_kedrov #Михаил Кедров
+recruit_character = SKL_georgy_stark #Георгий Старк
+recruit_character = SKL_ivan_kononov #Иван Кононов
+recruit_character = SKL_alexei_mikhailovich_spiridonov #Алексей Михайлович Спиридонов
+recruit_character = SKL_grigory_andreevich_gershuni #Григорий Андреевич Гершуни
+recruit_character = SKL_maria_alexandrovna_spiridonova #Мария Александровна Спиридонова
+recruit_character = SKL_boris_davidovich_kamkov #Борис Давидович Камков
+recruit_character = SKL_nikolai_dmitrievich_kondratyev #Николай Дмитриевич Кондратьев
+recruit_character = SKL_maslov_sergey_semenovich #Маслов Сергей Семенович
+recruit_character = SKL_ilya_isidorovich_fondominsky #Илья Исидорович Фондаминский
+recruit_character = SKL_vladimir_dmitrievich_kosmin #Косьмин Владимир Дмитриевич
+recruit_character = SKL_boris_viktorovich_savinkov #Борис Викторович Савинков
+recruit_character = SKL_abram_rafailovich_gotz #Абра́м Рафаи́лович Гоц
+recruit_character = SKL_kunle_donat_josephovich #Кунле Донат Иосифович
+recruit_character = SKL_anton_denikin #Антон Деникин
+recruit_character = SKL_alexandr_dolgorukov #Александр Долгоруков
+
+
+#Дипломатия
+give_military_access = USA
+add_opinion_modifier = {
+    target = USA
+    modifier = friendly_relationships
+}
+add_opinion_modifier = {
+    target = SOV
+    modifier = historical_hate
+}
+add_opinion_modifier = {
+    target = JAP
+    modifier = historical_hate
+}

@@ -1,0 +1,13 @@
+sup_category = {
+	icon = GFX_sup_icon
+	picture = GFX_sup_picture
+	
+	allowed = {
+		tag = DAY
+	}
+	visible = {
+		NOT = {
+		}
+	}
+}
+

@@ -1,0 +1,49 @@
+leader_traits = {
+		pulgasaru = { 
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no
+		}
+		
+		
+		allowed = {
+			FROM = {
+				OR = {
+				tag = DAY
+				tag = KOR}
+			}
+		}
+		
+		corps_commander_modifier = {
+			max_commander_army_size = -12
+		}
+		field_marshal_modifier = {
+			max_army_group_size = -3
+		}
+		modifier = {
+			special_forces_attack_factor = 0.15
+			army_org_factor = 0.05
+		}
+		attack_skill = 1
+		planning_skill = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 100
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+}

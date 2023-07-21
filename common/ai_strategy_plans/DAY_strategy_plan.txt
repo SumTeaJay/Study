@@ -1,0 +1,89 @@
+DAY_historical = {
+	name = "Dalyan historical plan"
+	desc = "Dalyan_desc"
+
+	allowed = {
+		original_tag = DAY
+	}
+	enable = {
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 80.0
+		infantry_tech = 8.5
+		artillery = 8.5
+		support_tech = 3.0
+	}
+
+	ideas = {
+		DAY_Kim_Huan = 10
+	}
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = 200
+	}
+	traits = {
+		DAY_pylgosari = 10
+	}
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+DAY_historical_War = {
+	name = "Dalyan historical plan War"
+	desc = "Dalyan_desc"
+
+	allowed = {
+		original_tag = DAY
+	}
+	enable = {
+		DAY = {has_war = yes}
+	}
+	abort = {
+	DAY = {has_war = no}	
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 10.0
+		infantry_tech = 33.5
+		artillery = 23.5
+		support_tech = 33.0
+	}
+
+	ideas = {
+		extensive_conscription
+	}
+	traits = {
+	}
+	weight = {
+		factor = 1.5
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+#is_historical_focus_on = yes

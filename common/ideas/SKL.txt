@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+		SKL_white_dominance = {		#Засилье белых
+            modifier = {
+				neutrality_drift = 0.01
+				communism_acceptance = -20
+				democratic_acceptance = 10
+				fascism_acceptance = 10
+				neutrality_acceptance = 10
+            }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		SKL_the_aftermath_of_the_Tokyo_conference = {		#Последствия Токийской конференции
+            modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.05
+				embargo_cost_factor = 0.1
+				base_fuel_gain_factor = -0.5
+				max_fuel_factor= -0.2
+				consumer_goods_factor = 0.05
+            }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		SKL_chaos = {		#Политический хаос
+            modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+            }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SKL_destroyed_economy = {		#Уничтоженная экономика
+            modifier = {
+				line_change_production_efficiency_factor= -0.25
+				production_speed_buildings_factor = -0.1
+				industry_repair_factor= -0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+            }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SKL_ROVS_headquarters = {		#Штаб РОВС
+            modifier = {
+				acclimatization_cold_climate_gain_factor = 0.05
+				acclimatization_hot_climate_gain_factor = 0.05
+				army_attack_factor = 0.01
+				army_defence_factor = 0.01
+				army_org_factor = -0.05
+				experience_gain_army = 0.03
+            }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
+

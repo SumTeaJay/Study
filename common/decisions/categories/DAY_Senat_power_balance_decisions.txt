@@ -1,0 +1,13 @@
+DAY_Senat_power_balance_decisions = {
+	icon = GFX_sup_icon
+	picture = GFX_sup_picture
+	
+	allowed = {
+		tag = DAY
+	}
+	visible = {
+		NOT = {
+		}
+	}
+}
+

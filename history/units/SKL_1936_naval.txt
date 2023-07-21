@@ -1,0 +1,29 @@
+﻿
+units= {
+	fleet = {
+		name = "Sakhalinsky Flot"
+		naval_base = 1820  #Южный Сахалин
+		task_force = {				
+			name = "Sakhalinsky Flot"
+			location = 1820 
+			#Легкий Крейсер
+			ship = { name = "Mayak Democratii" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SKL } } }					
+		}	
+		task_force = {				
+			name = "Sakhalinsky Flot"
+			location = 1820 				
+			#Подлодки
+			ship = { name = "Podvodny Zachitnik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SKL } } }
+			ship = { name = "Podvodny Voitel" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SKL } } }	
+		}	
+		task_force = {				
+			name = "Sakhalinsky Flot"
+			location = 1820 
+			#Эсминцы
+			ship = { name = "Sakhalinsky Voin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SKL } } }		
+			ship = { name = "Vostochny Voin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SKL } } }	
+			ship = { name = "Zachitnik Naroda" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SKL } } }		
+		}	
+	}
+	
+}

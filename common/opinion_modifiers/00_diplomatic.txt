@@ -1,0 +1,9 @@
+opinion_modifiers = {
+	
+	friendly_relationships = {
+		value = 50
+	}
+	historical_hate = {
+		value = -75
+	}
+}

@@ -1,0 +1,45 @@
+spriteTypes = {
+
+#Далянь
+	spriteType = {
+		name = "GFX_portrait_DAY_Senat"
+		texturefile = "gfx/leaders/DAY/Senat.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DAY_Kim_Huan"
+		texturefile = "gfx/leaders/DAY/Kim_Huan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DAY_Li_Namgun"
+		texturefile = "gfx/leaders/DAY/Li_Namgun.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_DAY_Kanji_Ishiwara"
+		texturefile = "gfx/leaders/DAY/Kanji_Ishiwara.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DAY_Kim_Huan"
+		texturefile = "gfx/interface/ideas/DAY/Kim_Huan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DAY_Kanji_Ishiwara"
+		texturefile = "gfx/interface/ideas/DAY/Kanji_Ishiwara.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DAY_Li_Namgun"
+		texturefile = "gfx/interface/ideas/DAY/Li_Namgun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DAY_Petr_Petrov"
+		texturefile = "gfx/interface/ideas/DAY/Petr_Petrov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DAY_Shiro_Yamado"
+		texturefile = "gfx/interface/ideas/DAY/Shiro_Yamado.dds"
+	}
+#Сахалин
+	spriteType = {
+		name = "GFX_SKL_viktor_chernov"
+		texturefile = "gfx/leaders/SKL/SKL_viktor_chernov.dds"
+	}
+}

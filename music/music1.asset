@@ -1,0 +1,6 @@
+# MAIN THEME
+ music = {
+ 	name = tfa_maintheme
+ 	file = "maintheme.ogg"
+ 	volume = 1
+ 	}

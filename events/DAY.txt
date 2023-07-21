@@ -1,0 +1,448 @@
+add_namespace = DAY
+
+# Начальные ивентны 
+
+country_event = {
+	id = DAY.1
+	title = DAY.1.t
+	desc = DAY.1.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	option = {
+	name = DAY.1.a
+	add_stability = -0.05
+	custom_effect_tooltip = DAY_Senat_efective_tt}
+	
+	option = {
+	name = DAY.1.b
+	add_stability = -0.1
+	add_war_support = 0.05
+	custom_effect_tooltip = DAY_Senat_not_efective_tt}
+	}
+country_event = {
+	id = DAY.2
+	title = DAY.2.t
+	desc = DAY.2.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	option = {
+	name = DAY.2.a
+	add_stability = -0.05
+	add_political_power = 25}
+	
+	option = {
+	name = DAY.2.b
+	add_stability = -0.1
+	add_political_power = -25
+	add_timed_idea = {
+		idea = DAY_not_stagnation
+		days = 180
+		}}
+		
+	}
+country_event = {
+	id = DAY.3
+	title = DAY.3.t
+	desc = DAY.3.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	option = {
+	name = DAY.3.a
+	add_stability = -0.01}	
+	}
+	
+# Левая ветка старта
+
+country_event = {
+	id = DAY.4
+	title = DAY.4.t
+	desc = DAY.4.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	# Тайный договор о защите независимости
+	option = {
+	name = DAY.4.a
+	add_political_power = -50
+	hidden_effect = {
+	add_to_variable = {
+	var = var_rev
+	value = 2
+	}
+	}
+	custom_effect_tooltip = DAY.4.a_tt
+	}
+	
+	# договор о дружбе
+	option = {
+	name = DAY.4.b
+	add_stability = 0.01
+	add_political_power = -25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_rev
+	value = 1
+	}
+	}
+	custom_effect_tooltip = DAY.4.b_tt}
+	
+	# Продлить договор
+	option = {
+	name = DAY.4.c
+	add_stability = 0.02
+	add_political_power = 25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_neu
+	value = 1
+	}
+	add_to_variable = {
+	var = var_japs
+	value = 1
+	}
+	}
+	custom_effect_tooltip = DAY.4.c_tt
+	}
+		
+	}
+# Сахалин
+country_event = {
+	id = DAY.5
+	title = DAY.5.t
+	desc = DAY.5.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	# Полноценная торговля с Сахалином
+	option = {
+	name = DAY.5.a
+	add_political_power = -50
+	add_stability = -0.02
+	hidden_effect = {
+	add_to_variable = {
+	var = var_rev
+	value = 1
+	}
+	}
+	SKL = {country_event = {
+						id = SKL.2
+					}}
+	custom_effect_tooltip = DAY.5.a_tt
+	}
+	
+	# Отпрвить дипломатическую миссию в Сахалин
+	option = {
+	name = DAY.5.b
+	add_stability = -0.01
+	add_political_power = -25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_neu
+	value = 1
+	}
+	}
+	custom_effect_tooltip = DAY.5.b_tt}
+	
+	# Солидарность с Японией
+	option = {
+	name = DAY.5.c
+	add_stability = 0.01
+	add_political_power = 25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_japs
+	value = 1
+	}
+	}
+	custom_effect_tooltip = DAY.5.c_tt
+	}
+		
+	}
+# Центральная ветка старта
+
+country_event = {
+	id = DAY.6
+	title = DAY.6.t
+	desc = DAY.6.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	# Принять Нашего Императора
+	option = {
+	name = DAY.6.a
+	add_political_power = -50
+	hidden_effect = {
+	add_to_variable = {
+	var = var_chin
+	value = 2
+	}
+	}
+	custom_effect_tooltip = DAY.6.a_tt
+	}
+	
+	# Принять, как и других правителей
+	option = {
+	name = DAY.6.b
+	add_stability = 0.01
+	add_political_power = -25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_neu
+	value = 2
+	}
+	add_to_variable = {
+	var = var_itsme
+	value = 1
+	}
+	}
+	custom_effect_tooltip = DAY.6.c_tt
+	}
+	# Принять Дружественного правителя
+	option = {
+	name = DAY.6.c
+	add_stability = 0.02
+	add_political_power = 25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_neu
+	value = 1
+	}
+	add_to_variable = {
+	var = var_japs
+	value = 2
+	}
+	add_to_variable = {
+	var = var_itsme
+	value = 1
+	}
+	}
+	custom_effect_tooltip = DAY.6.b_tt}
+		
+	}
+	
+# Корея (Минами Дзиро)
+
+country_event = {
+	id = DAY.7
+	title = DAY.7.t
+	desc = DAY.7.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	# Встретится с правителем нашего народа
+	option = {
+	name = DAY.7.a
+	add_political_power = -50
+	hidden_effect = {
+	add_to_variable = {
+	var = var_kore
+	value = 2
+	}
+	}
+	custom_effect_tooltip = DAY.7.a_tt
+	}
+	
+	# Встретится с Корейским Наместником
+	option = {
+	name = DAY.7.b
+	add_stability = 0.01
+	add_political_power = -25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_japs
+	value = -1
+	}
+	add_to_variable = {
+	var = var_kore
+	value = 1
+	}
+	add_to_variable = {
+	var = var_rev
+	value = 2
+	}
+	}
+	custom_effect_tooltip = DAY.7.b_tt}
+	
+	# Встретится с Вассалом Господина
+	option = {
+	name = DAY.7.c
+	add_stability = 0.02
+	add_political_power = 25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_neu
+	value = 1
+	}
+	add_to_variable = {
+	var = var_itsme
+	value = 1
+	}
+	add_to_variable = {
+	var = var_japs
+	value = 2
+	}
+	}
+	custom_effect_tooltip = DAY.7.c_tt
+	}
+		
+	}
+# Правая ветка старта
+
+country_event = {
+	id = DAY.8
+	title = DAY.8.t
+	desc = DAY.8.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	# Принять Легитимистов
+	option = {
+	name = DAY.8.a
+	add_political_power = -50
+	hidden_effect = {
+	add_to_variable = {
+	var = var_chin
+	value = 1
+	}
+	add_to_variable = {
+	var = var_rev
+	value = 2
+	}
+	}
+	custom_effect_tooltip = DAY.8.a_tt
+	}
+	
+	# Принять Китайцев
+	option = {
+	name = DAY.8.b
+	add_stability = 0.01
+	add_political_power = -25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_neu
+	value = 1
+	}
+	add_to_variable = {
+	var = var_rev
+	value = 1
+	}
+	add_to_variable = {
+	var = var_itsme
+	value = 1
+	}
+	}
+	custom_effect_tooltip = DAY.8.b_tt}
+	
+	# Вышвырнуть их
+	option = {
+	name = DAY.8.c
+	add_stability = 0.02
+	add_political_power = 25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_japs
+	value = 2
+	}}
+	custom_effect_tooltip = DAY.8.c_tt
+	}
+		
+	}
+	
+# Китайский вопрос
+
+country_event = {
+	id = DAY.9
+	title = DAY.9.t
+	desc = DAY.9.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	# Наши братья страдают
+	option = {
+	name = DAY.9.a
+	add_political_power = -50
+	hidden_effect = {
+	add_to_variable = {
+	var = var_chin
+	value = 2
+	}
+	add_to_variable = {
+	var = var_rev
+	value = 2
+	}
+	}
+	custom_effect_tooltip = DAY.9.a_tt
+	}
+	
+	# Останемся нейтральными к китайцам
+	option = {
+	name = DAY.9.b
+	add_stability = 0.01
+	add_political_power = -25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_neu
+	value = 1
+	}
+	add_to_variable = {
+	var = var_kore
+	value = 1
+	}
+	add_to_variable = {
+	var = var_itsme
+	value = 1
+	}
+	add_to_variable = {
+	var = var_rev
+	value = 1
+	}
+	}
+	custom_effect_tooltip = DAY.9.b_tt}
+	
+	# Мы считаем, как и Япония
+	option = {
+	name = DAY.9.c
+	add_stability = 0.02
+	add_political_power = 25
+	hidden_effect = {
+	add_to_variable = {
+	var = var_neu
+	value = 1
+	}
+	add_to_variable = {
+	var = var_japs
+	value = 2
+	}
+	}
+	custom_effect_tooltip = DAY.9.c_tt
+	}
+		
+	}
+	
+# Японская Проверка
+
+	country_event = {
+	id = DAY.10
+	title = DAY.10.t
+	desc = DAY.10.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	option = {
+	name = DAY.10.a
+	add_stability = -0.05
+	custom_effect_tooltip = DAY_jap_proverka_tt}
+	}

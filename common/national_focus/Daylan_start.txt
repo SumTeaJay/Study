@@ -1,0 +1,299 @@
+focus_tree = {
+	id = Daylan_start_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DAY
+		}
+	}
+	
+	default = no
+
+#Основная ветка
+focus = {
+id = DAY_start
+icon = GFX_goal_Problems_sityation
+x = 10
+y = 0
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					country_event = {
+						id = DAY.1
+					}			
+}
+} 
+focus = {
+id = DAY_stagnation
+icon = GFX_goal_What_economy
+prerequisite = { focus = DAY_start }
+x = 0
+y = 1
+relative_position_id = DAY_start
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					country_event = {
+						id = DAY.2
+					}
+				
+}
+}
+
+focus = {
+id = DAY_pereputie
+icon = GFX_goal_traktor
+prerequisite = { focus = DAY_stagnation }
+x = 0
+y = 1
+relative_position_id = DAY_stagnation
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					add_political_power = 25
+					custom_effect_tooltip = DAY_pereputie_tt
+					add_war_support = 0.01
+					country_event = {
+						id = DAY.3
+					}
+				
+}
+}
+
+# Левая стартовая ветка
+focus = {
+id = DAY_USSR_trage
+icon = GFX_goal_Togr_SOV
+prerequisite = { focus = DAY_pereputie }
+x = -2
+y = 1
+relative_position_id = DAY_pereputie
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					add_stability = -0.01
+					country_event = {
+						id = DAY.4
+					}
+				
+}
+}
+focus = {
+id = DAY_SKL_trage
+icon = GFX_goal_Vopros_sahalina
+prerequisite = { focus = DAY_USSR_trage }
+x = 0
+y = 1
+relative_position_id = DAY_USSR_trage
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					add_political_power = 30
+					country_event = {
+						id = DAY.5
+					}
+				
+}
+}
+# Центральная стартовая ветка
+focus = {
+id = DAY_Imperror_of_china
+icon = GFX_goal_Imperror_of_china_tsin
+prerequisite = { focus = DAY_pereputie }
+x = 0
+y = 1
+relative_position_id = DAY_pereputie
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					add_stability = -0.01
+					country_event = {
+						id = DAY.6
+					}
+				
+}
+}
+focus = {
+id = DAY_Minami_Dziro
+icon = GFX_goal_KOR_Not_free
+prerequisite = { focus = DAY_Imperror_of_china }
+x = 0
+y = 1
+relative_position_id = DAY_Imperror_of_china
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					add_stability = -0.01
+					country_event = {
+						id = DAY.7
+					}
+				
+}
+}
+# Правая стартовая ветка
+focus = {
+id = DAY_Gomindan_of_china
+icon = GFX_goal_Vizit_Gom
+prerequisite = { focus = DAY_pereputie }
+x = 2
+y = 1
+relative_position_id = DAY_pereputie
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					add_stability = -0.01
+					add_political_power = 10
+					country_event = {
+						id = DAY.8
+					}
+				
+}
+}
+focus = {
+id = DAY_Vopros_of_china
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = DAY_Gomindan_of_china }
+x = 0
+y = 1
+relative_position_id = DAY_Gomindan_of_china
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					add_stability = -0.01
+					add_political_power = 40
+					country_event = {
+						id = DAY.9
+					}
+				
+}
+}
+focus = {
+id = DAY_jap_proverka
+icon = GFX_goal_generic_demand_territory
+prerequisite = { focus = DAY_Vopros_of_china}
+prerequisite = {focus = DAY_Minami_Dziro}
+prerequisite = { focus = DAY_SKL_trage }
+x = 0
+y = 1
+relative_position_id = DAY_Minami_Dziro
+available = {
+		}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+					mark_focus_tree_layout_dirty = yes
+					custom_effect_tooltip = DAY_jap_proverka_tt
+					add_war_support = 0.01
+					country_event = {
+						id = DAY.10
+					}
+				
+}
+}
+focus = {
+id = DAY_pyt_jap
+icon = GFX_goal_generic_demand_territory
+x = -10
+y = 1
+	allowed = { always = yes }
+available = { AND = {
+	check_variable = {
+	var = var_neu
+	value = var_japs
+	compare = less_than
+	}
+	check_variable = {
+	var = var_rev
+	value = var_japs
+	compare = less_than
+	}
+	has_completed_focus = DAY_jap_proverka
+	}}
+allow_branch = { AND = { 
+	check_variable = {
+	var = var_neu
+	value = var_japs
+	compare = less_than
+	}
+	check_variable = {
+	var = var_rev
+	value = var_japs
+	compare = less_than
+	}
+	has_completed_focus = DAY_jap_proverka
+	}}
+cost = 2
+ai_will_do = {
+factor = 10
+}
+search_filters = { FOCUS_FILTER_POLITICAL }
+completion_reward = {
+			custom_effect_tooltip = DAY_japs_tt
+			add_war_support = 0.01				
+}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+

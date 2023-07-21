@@ -1,0 +1,50 @@
+add_namespace = SKL
+#выборы
+country_event = {
+	id = SKL.1
+	title = SKL.1.t
+	desc = SKL.1.d
+    fire_only_once = yes  
+	is_triggered_only = yes
+	option = {
+	name = SKL.1.a	
+    complete_national_focus = SKL_Workers
+	}
+	option = {
+	name = SKL.1.b	
+    complete_national_focus = SKL_Nation
+	}
+	option = {
+	name = SKL.1.c	
+    complete_national_focus = SKL_Government
+	}
+}
+
+# Торговля С Далянь для Сахалина
+	country_event = {
+		id = SKL.2
+	title = SKL.2.t
+	desc = SKL.2.d
+	picture = event_Ar_start
+
+	is_triggered_only = yes
+
+	# Принять торговлю
+	option = {
+	name = SKL.2.a
+	SKL = {
+	add_political_power = 15
+	add_ideas = {SKL_trage_DAY_1lvl}}
+	hidden_effect = {
+	DAY = {
+	add_ideas = {DAY_trage_SKL_1lvl}
+	add_political_power = 10}
+	}
+	custom_effect_tooltip = SKL_trage_DAY_tt
+	}
+	}
+	# Отказаться (временно не работает, иначе ИИ часто отказывает)
+	option = {
+	name = SKL.2.b
+	add_political_power = -20
+	custom_effect_tooltip = NOT_SKL_trage_DAY_tt}

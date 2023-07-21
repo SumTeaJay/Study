@@ -1,0 +1,24 @@
+﻿l_russian:
+#Сахалин
+ SKL_fascism:0 "Народная Республика Сахалин"
+ SKL_communism:0 "Социалистический Сахалин"
+ SKL_democratic:0 "Сахалинская Демократическая Республика"
+ SKL_neutrality:0 "Сахалин"
+ SKL_fascism_DEF:0 "Народная Республика Сахалин"
+ SKL_communism_DEF:0 "Социалистическая Советская Республика Сахалин"
+ SKL_democratic_DEF:0 "Сахалинская Демократическая Республика"
+ SKL_neutrality_DEF:0 "Сахалин"
+ SKL_fascism_ADJ:0 "Сахалинск."
+ SKL_communism_ADJ:0 "Сахалинск."
+ SKL_democratic_ADJ:0 "Сахалинск."
+ SKL_neutrality_ADJ:0 "Сахалинск."
+
+#Далянь
+DAY_neutrality:0 "Город Далянь"
+DAY_neutrality_DEF:0 "Город Далянь"
+DAY_neutrality_ADJ:0 "Даляньск."
+
+#Трансамур
+TRR_fascism:0 "Трансамур"
+TRR_fascism_DEF:0 "Трансамур"
+TRR_fascism_ADJ:0 "Трансамурск."

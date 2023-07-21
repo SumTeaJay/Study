@@ -1,0 +1,86 @@
+capital = 745
+set_oob = "DAY_1936"
+set_research_slots = 1
+set_technology = {
+	infantry_weapons = 1
+	motorised_infantry = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+set_convoys = 3
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+
+set_power_balance = {
+id = DAY_Senat_bop
+set_default = yes
+}
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders  = yes
+	can_generate_female_country_leaders = yes
+}
+set_stability = 0.4
+set_war_support = 0.1
+add_ideas = free_trade
+add_ideas = disarmed_nation
+add_ideas = free_city_economy
+add_ideas = {DAY_stagnations DAY_night_obraz_1 DAY_save_this_30g}
+#власть
+set_variable = {
+	var = var_neu
+	value = 0
+}
+set_variable = {
+	var = var_japs
+	value = 0
+}
+set_variable = {
+	var = var_rev
+	value = 0
+}
+
+#Мы страна или город?
+set_variable = {
+	var = var_city
+	value = 0
+}
+set_variable = {
+	var = var_countris
+	value = 0
+}
+#Кто мы есть?
+set_variable = {
+	var = var_kore
+	value = 0
+}
+set_variable = {
+	var = var_chin
+	value = 0
+}
+set_variable = {
+	var = var_itsme
+	value = 0
+}
+
+recruit_character = DAY_Senat
+recruit_character = DAY_Kim_Huan
+recruit_character = DAY_Kanji_Ishiwara
+recruit_character = DAY_Petr_Petrov
+recruit_character = DAY_Shiro_Yamado
+recruit_character = DAY_Li_Namgun
+
+activate_advisor = Kanji_Ishiwara
+activate_advisor = Li_Namgun
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	neutrality = 100
+	communism = 0
+}
