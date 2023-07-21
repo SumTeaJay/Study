@@ -1,0 +1,16 @@
+characters = {
+	TRR_Teiichi_Sudzuki = {
+		name = TRR_Teiichi_Sudzuki
+		portraits={
+			civilian={
+				large=GFX_TRR_Teiichi_Sudzuki
+			}
+		}
+		country_leader = {
+			ideology = fascism
+            desc = TRR_Teiichi_Sudzuki_desc
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

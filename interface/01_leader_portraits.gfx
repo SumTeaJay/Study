@@ -42,4 +42,9 @@ spriteTypes = {
 		name = "GFX_SKL_viktor_chernov"
 		texturefile = "gfx/leaders/SKL/SKL_viktor_chernov.dds"
 	}
+#Трансамур
+spriteType = {
+	name = "GFX_TRR_Teiichi_Sudzuki"
+	texturefile = "gfx/leaders/TRR/TRR_Teiichi_Sudzuki.dds"
+}
 }
